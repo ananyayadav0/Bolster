@@ -1,0 +1,58 @@
+
+.navigation-bar{
+  background-color: #00818a;
+  padding: 0% 3% 1% 3%;
+}
+
+
+.top-row{
+  background-image: url('img/10.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  padding: 1% 1%;
+  filter: brightness(50%);
+}
+.crousel-img
+{
+  padding: 1% 1% 1% 1%;
+  height: 500px;
+  filter: brightness(50%);
+
+}
+.crousel-heading
+{
+  font-size: 50px;
+}
+.crousel-container
+{
+  background-color: #00818a;
+}
+.footer{
+  background: #00818a;
+  color:white;
+
+  .links{
+    ul {list-style-type: none;}
+    li a{
+      color: white;
+      transition: color .2s;
+      &:hover{
+        text-decoration:none;
+        color:#46b3e6;
+        }
+    }
+  }
+  .about-company{
+    i{font-size: 25px;}
+    a{
+      color:white;
+      transition: color .2s;
+      &:hover{color:#46b3e6}
+    }
+  }
+  .location{
+    i{font-size: 18px;}
+  }
+  .copyright p{border-top:1px solid rgba(255,255,255,.1);}
+}
