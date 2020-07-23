@@ -1,58 +1,279 @@
 
-.navigation-bar{
-  background-color: #00818a;
-  padding: 0% 3% 1% 3%;
+a{
+    text-decoration: none;
 }
+.nav-fix{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    height: 50px;
+    width:100%;
+    background-color:rgba(0,0,0,0.5);
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+.para{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(10,0,0,0.5)),url(img/15.jpg);
+     /* Set a specific height */
+  height: 400px;
 
-
-.top-row{
-  background-image: url('img/10.jpg');
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  padding: 1% 1%;
-  filter: brightness(50%);
 }
-.crousel-img
-{
-  padding: 1% 1% 1% 1%;
-  height: 500px;
-  filter: brightness(50%);
+.info{
+  background-color: black;
+  margin:0;
+}
+.infocontainer{
+  padding:2% 10%;
+  margin: 0 15%;
+  color:#cecece
+}
+.infocont{
+  margin:1% 0;
+}
+.infocontainer button{
+  margin: 2% 35%;
+  padding: 1% 5%;
+  border-radius: 4%;
+}
+.infocontainer button:hover{
+  background-color: #cecece;
+}
+.services{
+  margin-top:1%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+.servicecontainer{
+  max-width:1000px;
+  text-align: center;
+  margin: auto;
+  padding: 0 2rem;
+  background-color: #f2f2f2;
+}
+.servicecontainer img{
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 50%;
+  padding:3%;
+}
+.service p{
+  font-weight: 600;
+  font-size: 1rem;
+  color:black;
+  padding-top: 20%
+}
 
+  .features{
+    height:auto;
+    width:100%;
+    padding:4% 6%;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.5);
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .flip-card-front {
+    background-color: white;
+    color: black;
+    padding:10%;
+  }
+  
+  .flip-card-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+    padding:15%;
+  }
+  .img-flip{
+    margin:10%;
+  }
+  .header-flip{
+    font-family: "Apple Chancery",cursive;
+    font-weight: bold;
+    margin-top:10%;
+  }
+  .faqs-sec{
+
+    height:auto;
+    width:100%;
+    padding:8% 10%;
+    background-color: #f2f2f2;
+   
+  }
+  .fqhead{
+    background-color:white;
+    height:auto;
+    width:auto;
+    padding: 2% 2%;
+    text-align: center;
+  }
+
+  .accordion {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #e6e4e4;
+    color:black;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: #49494a;
+    color:white;
+    display: none;
+    overflow: hidden;
+  }
+  .panel p{
+    color:rgb(255, 255, 255);
+  }
+  .crousel{
+
+  height: auto;
+  width: 100%;
 }
-.crousel-heading
-{
-  font-size: 50px;
+.cr{
+  height: auto;
+  width: 100%;
+  background-color:#f7ffcc;
 }
-.crousel-container
-{
-  background-color: #00818a;
+
+.paycontainer{
+  padding: 2% 8% 8% 8%;
+  text-align:center;
 }
-.footer{
-  background: #00818a;
+.paymethod{
+  background: #f2f2f2;
+}
+.payhead{
+  margin: 2%;
+  padding: 1% 10%;
+}
+
+.foot{
+
+  background-color: #121212;
+  width: 100%;
+  height:auto;
+  padding:5%;
+}
+.footer ul{
+  list-style-type: none;
+}
+.footer a{
+  text-decoration:none;
+  color:#5c5c5c;
+}
+.footer a:hover{
+  color:white;
+  text-decoration: none;
+}
+.footer h4,p{
+  color:white;
+}
+.listitem{
+  background-color: #f2f2f2;
+  color:black;
+  border-radius: 2%;
+  text-align: center;
+  padding: 3%;
+  margin:2%;
+}
+.listitem p{
+  color: rgba(200,0,0);
+}
+
+/*login signup*/
+.formcontainer{
+  text-align: center;;
+  margin:0 5%;
+  padding:0% 5%;
+  text-align:center;
+}
+.signuptab, .logintab{
+  display: inline;
+  padding: 1% 4%;
+  border-radius: 6%;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: black;
   color:white;
 
-  .links{
-    ul {list-style-type: none;}
-    li a{
-      color: white;
-      transition: color .2s;
-      &:hover{
-        text-decoration:none;
-        color:#46b3e6;
-        }
-    }
-  }
-  .about-company{
-    i{font-size: 25px;}
-    a{
-      color:white;
-      transition: color .2s;
-      &:hover{color:#46b3e6}
-    }
-  }
-  .location{
-    i{font-size: 18px;}
-  }
-  .copyright p{border-top:1px solid rgba(255,255,255,.1);}
+}
+.loginform,.signupform{
+  margin:2%;
+  padding:3%;
+  background: #f2f2f2
+}
+.loginform input,.signupform input{
+  margin:1%;
+  border-color: white;
+  border-radius: 5%;
+}
+.signupform p{
+  text-align: left;
+}
+.loginform button,.signupform button{
+  background: black;
+  color: white;
+  padding:2% 10%;
+  margin:1%;
+  border-radius:4%;
+}
+
+.select
+{
+  background-color:#FFF;
+  color:black;
+	
+}
+.signupform{
+  visibility: hidden;
+}
+button{
+  width:100px;
+}
+
+.func{
+  text-align: center;
+  background-color: #f2f2f2;
+  padding:2%;
+}
+.func ul li{
+  list-style: none;
 }
